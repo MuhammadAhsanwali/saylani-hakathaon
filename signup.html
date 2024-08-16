@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.signup-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .signup-form h2 {
+        font-size: 24px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- <label for="">email</label><br>
+    <input id="email" type="email"><br>
+    <label for="">password</label><br>
+    <input id="password" type="password"><br><br>
+    <button id="sbtn">submit</button>
+  -->
+    <div class="container">
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="username" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button type="submit" id="sbtn" class="btn">Sign Up</button> <br>
+                <p class="signup-link">Already have an account? <a href="signin.html">Sign in</a></p> <br>
+                <center>   <a href="index.html" style="text-decoration: none;" >back to home</a></center>
+
+            </div>
+        </div>
+    </div>
+    <script type="module" src="fb.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
